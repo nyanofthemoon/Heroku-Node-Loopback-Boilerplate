@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "account": {
+      "type": "belongsTo",
+      "model": "Account",
+      "foreignKey": ""
+    },
+    "entries": {
+      "type": "hasMany",
+      "model": "Entry",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
