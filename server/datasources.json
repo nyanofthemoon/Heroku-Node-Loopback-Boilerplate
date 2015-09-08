@@ -1,0 +1,14 @@
+{
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "127.0.0.1",
+    "database": "decodemtl_addressbook",
+    "username": "root",
+    "password": "",
+    "name": "mysql",
+    "connector": "mysql"
+  }
+}

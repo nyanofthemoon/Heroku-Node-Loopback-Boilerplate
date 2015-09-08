@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "AddressBook": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Entry": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Phone": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "ElectronicMail": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "mysql",
+    "public": true
+  }
+}

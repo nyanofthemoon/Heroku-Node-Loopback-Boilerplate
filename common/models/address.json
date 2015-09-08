@@ -1,0 +1,42 @@
+{
+  "name": "Address",
+  "plural": "Addresses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "addressLine1": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine2": {
+      "type": "string",
+      "required": false
+    },
+    "province": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "postalCode": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

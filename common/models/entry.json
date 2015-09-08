@@ -1,0 +1,34 @@
+{
+  "name": "Entry",
+  "plural": "Entries",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["home", "work", "other"],
+      "default": "home",
+      "required": true
+    },
+    "subtype": {
+      "type": "string",
+      "enum": ["phone", "address", "electronic-mail"],
+      "default": "phone",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

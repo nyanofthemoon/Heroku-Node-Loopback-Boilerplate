@@ -1,0 +1,32 @@
+{
+  "name": "Phone",
+  "plural": "Phones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "enum": ["landline", "cellular", "fax"],
+      "default": "landline",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
