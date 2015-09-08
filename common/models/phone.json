@@ -13,9 +13,13 @@
     },
     "type": {
       "type": "string",
-      "enum": ["landline", "cellular", "fax"],
-      "default": "landline",
-      "required": true
+      "required": true,
+      "enum": [
+        "landline",
+        "cellular",
+        "fax"
+      ],
+      "default": "landline"
     },
     "created": {
       "type": "date",
@@ -26,7 +30,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "entry": {
+      "type": "belongsTo",
+      "model": "Entry",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

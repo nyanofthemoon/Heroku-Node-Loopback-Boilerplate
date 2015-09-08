@@ -9,15 +9,23 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["home", "work", "other"],
-      "default": "home",
-      "required": true
+      "required": true,
+      "enum": [
+        "home",
+        "work",
+        "other"
+      ],
+      "default": "home"
     },
     "subtype": {
       "type": "string",
-      "enum": ["phone", "address", "electronic-mail"],
-      "default": "phone",
-      "required": true
+      "required": true,
+      "enum": [
+        "phone",
+        "address",
+        "electronic-mail"
+      ],
+      "default": "phone"
     },
     "created": {
       "type": "date",
@@ -28,7 +36,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "addressBook": {
+      "type": "belongsTo",
+      "model": "AddressBook",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

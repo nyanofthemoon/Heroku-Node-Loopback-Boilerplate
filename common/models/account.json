@@ -8,7 +8,13 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "addressBooks": {
+      "type": "hasMany",
+      "model": "AddressBook",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
